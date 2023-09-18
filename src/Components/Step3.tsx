@@ -1,4 +1,6 @@
 import React from "react";
+import NextButton from "./NextButton";
+import StepsContainer from "./StepsContainer";
 
 const Step3 = ({
   setStep,
@@ -6,7 +8,7 @@ const Step3 = ({
   setStep: React.Dispatch<React.SetStateAction<1 | 2 | 3 | 4>>;
 }) => {
   return (
-    <article>
+    <StepsContainer>
       <h1>Pick add-ons</h1>
       <p>Add-ons help enhance your gaming experience.</p>
       <div className="card card-side bg-base-100 shadow-xl">
@@ -40,8 +42,8 @@ const Step3 = ({
         </div>
       </div>
       <button onClick={() => setStep(2)}>Previous</button>
-      <button onClick={() => setStep(4)}>Next</button>
-    </article>
+      <NextButton onClick={() => setStep(4)} />
+    </StepsContainer>
   );
 };
 

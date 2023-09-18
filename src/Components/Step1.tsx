@@ -1,4 +1,6 @@
 import React from "react";
+import NextButton from "./NextButton";
+import StepsContainer from "./StepsContainer";
 
 const Step1 = ({
   setStep,
@@ -6,7 +8,7 @@ const Step1 = ({
   setStep: React.Dispatch<React.SetStateAction<1 | 2 | 3 | 4>>;
 }) => {
   return (
-    <article className="m-auto w-3/4 h-full p-10 flex flex-col justify-center gap-16">
+    <StepsContainer>
       <div>
 
       <h1 className="font-semibold text-2xl">Personal info</h1>
@@ -35,8 +37,8 @@ const Step1 = ({
           <input type="text" className="input ring ring-slate-200 w-full bg-inherit" />
         </div>
       </section>
-      <button onClick={() => setStep(2)} className="self-end bg-purple-950 py-2.5 px-5 text-xl text-purple-100 rounded">Next</button>
-    </article>
+      <NextButton onClick={() => setStep(2)} />
+    </StepsContainer>
   );
 };
 

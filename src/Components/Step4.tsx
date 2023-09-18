@@ -1,4 +1,5 @@
 import React from "react";
+import StepsContainer from "./StepsContainer";
 
 const Step4 = ({
   setStep,
@@ -6,14 +7,14 @@ const Step4 = ({
   setStep: React.Dispatch<React.SetStateAction<1 | 2 | 3 | 4>>;
 }) => {
   return (
-    <article>
+    <StepsContainer>
       <h1>Finishing up</h1>
       <p>Double-check everything looks OK before confirming.</p>
       <div>
         
       </div>
       <button onClick={() => setStep(3)}>Previous</button>
-    </article>
+    </StepsContainer>
   );
 };
 

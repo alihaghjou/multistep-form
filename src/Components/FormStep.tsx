@@ -4,7 +4,7 @@ export const FormStep = ({ step }: { step: 1 | 2 | 3 | 4 }) => {
       <div className="flex items-center gap-4">
         <div
           className="ring-1 ring-white rounded-full flex justify-center items-center"
-          style={{ height: "35px", width: "35px" }}
+          style={step === 1 ?{ height: "35px", width: "35px", backgroundColor: "white", color: "blue" }: {height: "35px", width: "35px"}}
         >
           1
         </div>
@@ -16,7 +16,7 @@ export const FormStep = ({ step }: { step: 1 | 2 | 3 | 4 }) => {
       <div className="flex items-center gap-4">
         <div
           className="ring-1 ring-white rounded-full flex justify-center items-center"
-          style={{ height: "35px", width: "35px" }}
+          style={step === 2 ?{ height: "35px", width: "35px", backgroundColor: "white", color: "blue" }: {height: "35px", width: "35px"}}
         >
           2
         </div>
@@ -28,7 +28,7 @@ export const FormStep = ({ step }: { step: 1 | 2 | 3 | 4 }) => {
       <div className="flex items-center gap-4">
         <div
           className="ring-1 ring-white rounded-full flex justify-center items-center"
-          style={{ height: "35px", width: "35px" }}
+          style={step === 3 ?{ height: "35px", width: "35px", backgroundColor: "white", color: "blue" }: {height: "35px", width: "35px"}}
         >
           3
         </div>
@@ -40,7 +40,7 @@ export const FormStep = ({ step }: { step: 1 | 2 | 3 | 4 }) => {
       <div className="flex items-center gap-4">
         <div
           className="ring-1 ring-white rounded-full flex justify-center items-center"
-          style={{ height: "35px", width: "35px" }}
+          style={step === 4 ?{ height: "35px", width: "35px", backgroundColor: "white", color: "blue" }: {height: "35px", width: "35px"}}
         >
           4
         </div>
