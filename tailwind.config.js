@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage : {
+        "desktop-bg": "url('/src/assets/images/bg-sidebar-desktop.svg')"
+      }
+    },
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
