@@ -9,40 +9,43 @@ const Step3 = ({
 }) => {
   return (
     <StepsContainer>
-      <h1>Pick add-ons</h1>
-      <p>Add-ons help enhance your gaming experience.</p>
-      <div className="card card-side bg-base-100 shadow-xl">
-        <input type="checkbox" checked={true} className="checkbox" />
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Watch</button>
+      <div>
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience.</p>
+      </div>
+      <section className="flex flex-col gap-3">
+        <div className="card card-side bg-base-100 shadow-xl">
+          <div className="card-body flex-row">
+            <input type="checkbox" checked={true} className="checkbox" />
+            <div>
+              <h2 className="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="card card-side bg-base-100 shadow-xl">
-        <input type="checkbox" checked={true} className="checkbox" />
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Watch</button>
+        <div className="card card-side bg-base-100 shadow-xl">
+          <div className="card-body flex-row">
+            <input type="checkbox" checked={true} className="checkbox" />
+            <div>
+              <h2 className="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="card card-side bg-base-100 shadow-xl">
-        <input type="checkbox" checked={true} className="checkbox" />
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Watch</button>
+        <div className="card card-side bg-base-100 shadow-xl">
+          <div className="card-body flex-row">
+            <input type="checkbox" checked={true} className="checkbox" />
+            <div>
+              <h2 className="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+            </div>
           </div>
         </div>
+      </section>
+      <div className="flex justify-between">
+        <button onClick={() => setStep(2)}>Previous</button>
+        <NextButton onClick={() => setStep(4)} />
       </div>
-      <button onClick={() => setStep(2)}>Previous</button>
-      <NextButton onClick={() => setStep(4)} />
     </StepsContainer>
   );
 };

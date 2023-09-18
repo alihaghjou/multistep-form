@@ -13,7 +13,11 @@ const Step4 = ({
       <div>
         
       </div>
+      <div>
+
       <button onClick={() => setStep(3)}>Previous</button>
+      <button>Confirm</button>
+      </div>
     </StepsContainer>
   );
 };
